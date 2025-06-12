@@ -1,0 +1,51 @@
+"Registry Key: HKLM\SYSTEM\CurrentControlSet\Control\PriorityControl
+
+DWORD Values:
+
+ForegroundBoost
+Definition: Activates foreground priority boost for foreground applications. This can enhance the performance of actively focused applications.
+Validity: 95% (Documented in Windows Internals)
+Sources:
+Microsoft Docs - ForegroundBoost: [https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setadditionalforegroundboostprocesses]
+
+ThreadBoostType
+Definition: Specifies the type of boost used for threads.
+0: Disabled boost
+1: Priority-based boost
+2: Time-based boost
+Validity: 90% (Documented in Windows Internals)
+Sources:
+Microsoft Docs - Thread Boost: [https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriorityboost]
+
+ThreadSchedulingModel
+Definition: Determines the thread scheduling model used.
+0: Priority model
+1: Round Robin model
+Validity: 95% (Documented in Windows Internals)
+Sources:
+Microsoft Docs - Thread Scheduling: 1) [https://learn.microsoft.com/en-us/dotnet/standard/threading/threads-and-threading] 2) [https://learn.microsoft.com/en-us/dotnet/standard/threading/scheduling-threads]
+
+
+AdjustDpcThreshold
+Definition: Sets the threshold, in milliseconds, for adjusting the DPC frequency.
+Validity: 85% (Documented in blogs and forums)
+Sources:
+TechNet Blog - AdjustDpcThreshold: 1) [https://techcommunity.microsoft.com/t5/failover-clustering/tuning-failover-cluster-network-thresholds/ba-p/371834] 2) [https://learn.microsoft.com/en-us/biztalk/core/adjusting-throttling-thresholds-when-and-why]
+
+DeepIoCoalescingEnabled
+Definition: Enables Deep I/O coalescing. This can improve I/O performance for NVMe devices.
+Validity: 80% (Documented in blogs and forums)
+Sources:
+Microsoft Docs - Deep Io Coalescing: [https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/seqio.doc]
+
+IdealDpcRate
+Definition: Sets the ideal DPC rate, in Hz.
+Validity: 85% (Documented in blogs and forums)
+Sources:
+TechNet Forum - IdealDpcRate: 
+
+SchedulerAssistThreadFlagOverride
+Definition: Overrides the 'Scheduler Assist Thread' flag for threads.
+Validity: 75% (Documented in blogs and forums)
+Sources:
+Windows Internals - Scheduler Assist Thread: [https://www.microsoftpressstore.com/articles/article.aspx?p=2233328&seqNum=7]

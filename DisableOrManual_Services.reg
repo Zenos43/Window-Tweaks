@@ -1,0 +1,341 @@
+Windows Registry Editor Version 5.00
+
+; 2 = auto, 3 = manual, 4 = disabled
+
+; Connected User Experiences and Telemetry service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004
+
+; Data Usage service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DusmSvc]
+"Start"=dword:00000004
+
+; Geolocation service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lfsvc]
+"Start"=dword:00000004
+
+; Windows Error Reporting service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WerSvc]
+"Start"=dword:00000003
+
+; Clipboard User Service service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cbdhsvc]
+"Start"=dword:00000004
+
+; Connected Devices Platform User Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CDPUserSvc]
+"Start"=dword:00000004
+
+; Contact Data service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PimIndexMaintenanceSvc]
+"Start"=dword:00000003
+
+; Udk User Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UdkUserSvc]
+"Start"=dword:00000004
+
+; Device Association Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DeviceAssociationService]
+"Start"=dword:00000004
+
+; Network Connected Devices Auto-Setup
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NcdAutoSetup]
+"Start"=dword:00000004
+
+; Network Connection Broker
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NcbService]
+"Start"=dword:00000004
+
+; Network Location Awareness
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc]
+"Start"=dword:00000003
+
+; Display Enhancement Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DisplayEnhancementService]
+"Start"=dword:00000003
+
+; Encrypting File System (EFS) service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EFS]
+"Start"=dword:00000003
+
+; Function Discovery Provider Host service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\fdPHost]
+"Start"=dword:00000004
+
+; Function Discovery Resource Publication service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FDResPub]
+"Start"=dword:00000004
+
+; IKE and AuthIP IPsec Keying Modules service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IKEEXT]
+"Start"=dword:00000004
+
+; IP Helper service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\iphlpsvc]
+"Start"=dword:00000004
+
+; IPsec Policy Agent service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PolicyAgent]
+"Start"=dword:00000004
+
+; Network Connections service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Netman]
+"Start"=dword:00000003
+
+; Now Playing Session Manager Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NPSMSvc]
+"Start"=dword:00000004
+
+; Optimize drives service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\defragsvc]
+"Start"=dword:00000003
+
+; Payments and NFC/SE Manager service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SEMgrSvc]
+"Start"=dword:00000003
+
+; Portable Device Enumerator service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WPDBusEnum]
+"Start"=dword:00000003
+
+; Program Compatibility Assistant Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PcaSvc]
+"Start"=dword:00000003
+
+; Remote Access Connection Manager Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RasMan]
+"Start"=dword:00000003
+
+; Remote Desktop Services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService]
+"Start"=dword:00000003
+
+; Remote Registry Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry]
+"Start"=dword:00000004
+
+; Retail Demo Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RetailDemo]
+"Start"=dword:00000003
+
+; Quality Windows Audio Video Experience Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\QWAVE]
+"Start"=dword:00000003
+
+; Secure Socket Tunneling Protocol Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SstpSvc]
+"Start"=dword:00000003
+
+; Shell Hardware Detection
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ShellHWDetection]
+"Start"=dword:00000004
+
+; SSDP Discovery
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SSDPSRV]
+"Start"=dword:00000004
+
+; Superfetch Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SysMain]
+"Start"=dword:00000004
+
+; Sync Host Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\OneSyncSvc]
+"Start"=dword:00000004
+
+; TCP/IP NetBIOS Helper Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lmhosts]
+"Start"=dword:00000004
+
+; WebClient Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient]
+"Start"=dword:00000003
+
+; Windows Audio Endpoint Builder
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AudioEndpointBuilder]
+"Start"=dword:00000003
+
+; Windows Defender Firewall
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mpssvc]
+"Start"=dword:00000003
+
+; Web Threat Defense Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\webthreatdefsvc]
+"Start"=dword:00000004
+
+; Web Threat Defense User Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\webthreatdefusersvc]
+"Start"=dword:00000004
+
+; Distributed Transaction Coordinator
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC]
+"Start"=dword:00000003
+
+; Windows Remote Management (WS-Management) Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinRM]
+"Start"=dword:00000003
+
+; Windows Search Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WSearch]
+"Start"=dword:00000004
+
+; Windows Time Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time]
+"Start"=dword:00000003
+
+; Distributed Link Tracking Client Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrkWks]
+"Start"=dword:00000004
+
+; Distributed Link Tracking Client Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BDESVC]
+"Start"=dword:00000003
+
+; Background Intelligent Transfer Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS]
+"Start"=dword:00000004
+
+; AssignedAccessManager Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\AssignedAccessManagerSvc]
+"Start"=dword:00000004
+
+; Diagnostic Policy Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DPS]
+"Start"=dword:00000004
+
+; Connected Devies Platform Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\CDPSvc]
+"Start"=dword:00000004
+
+; Delivery Optimization Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DoSvc]
+"Start"=dword:00000003
+
+; Downloaded Maps Manager Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MapsBroker]
+"Start"=dword:00000004
+
+; MS Keyboard Filter Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MsKeyboardFilter]
+"Start"=dword:00000003
+
+; State Repository Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\StateRepository]
+"Start"=dword:00000003
+
+; Shared PC Account Manager
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\shpamsvc]
+"Start"=dword:00000004
+
+; Themes Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Themes]
+"Start"=dword:00000004
+
+; Storage Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\StorSvc]
+"Start"=dword:00000003
+
+; Work Folders
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\workfolderssvc]
+"Start"=dword:00000003
+
+; Text Input Management Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TextInputManagementService]
+"Start"=dword:00000003
+
+; Web Account Manager
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TokenBroker]
+"Start"=dword:00000004
+
+; Security Center
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wscsvc]
+"Start"=dword:00000003
+
+; Update Orchestrator Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsoSvc]
+"Start"=dword:00000003
+
+; Windows Push Notification System Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WpnService]
+"Start"=dword:00000003
+
+; Windows Image Acquisition (WIA) Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\StiSvc]
+"Start"=dword:00000003
+
+; Server Service // mandatory for SMB server and LGTV Companion
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer]
+"Start"=dword:00000002
+
+; Print Spooler Service // Mandatory for Print  (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Spooler]
+"Start"=dword:00000004
+
+; WIFI Services
+; Windows Connection Manager Service // Mandatory for WIFI (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Wcmsvc]
+"Start"=dword:00000004
+; WinHTTP Web Proxy Auto-Discovery Service // Mandatory for WIFI (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc]
+"Start"=dword:00000004
+; Radio Management Service // Mandatory for WIFI (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RmSvc]
+"Start"=dword:00000004
+
+; Hyper V Services
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HvHost"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmickvpexchange"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicguestinterface"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicshutdown"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicheartbeat"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicvmsession"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicrdv"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmictimesync"]
+"Start"=dword:00000003
+["HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vmicvss"]
+"Start"=dword:00000003
+
+; Drivers services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip6]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Beep]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NdisVirtualBus]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBIOS]
+"Start"=dword:00000004
+
+; BLUETOOTH services
+; AVCTP service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthAvctpSvc]
+"Start"=dword:00000003
+; Bluetooth Audio Gateway Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTAGService]
+"Start"=dword:00000003
+; Bluetooth Support Service // Mandatory for Bluetooth (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bthserv]
+"Start"=dword:00000004
+
+; XBOX services
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblAuthManager]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XblGameSave]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxGipSvc]
+"Start"=dword:00000004
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\XboxNetApiSvc]
+"Start"=dword:00000004
+
+; UserChoice Protection Driver (UCPD) - disable to be able to change reg values for ShellFeedsTaskbarViewMode/IsFeedsAvailable/TaskbarDa/DeviceRegion
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UCPD]
+"Start"=dword:00000004
+
+; Client License Service // Mandatory for allow msstore app install with winget (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC]
+"Start"=dword:00000004

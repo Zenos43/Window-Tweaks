@@ -1,0 +1,25 @@
+Windows Registry Editor Version 5.00
+
+; IKE and AuthIP IPsec Keying Modules service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\IKEEXT]
+"Start"=dword:00000003
+
+; IP Helper service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\iphlpsvc]
+"Start"=dword:00000003
+
+; NdisVirtualBus Driver Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NdisVirtualBus]
+"Start"=dword:00000003
+
+; Radio Management Service // Mandatory for WIFI (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RmSvc]
+"Start"=dword:00000003
+
+; Secure Socket Tunneling Protocol Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SstpSvc]
+"Start"=dword:00000003
+
+; WinHTTP Web Proxy Auto-Discovery Service // Mandatory for WIFI (set to manual)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WinHttpAutoProxySvc]
+"Start"=dword:00000003

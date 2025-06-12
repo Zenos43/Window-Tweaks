@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DXGKrnl]
+"CreateGdiPrimaryOnSlaveGPU"=dword:00000001
+"DriverSupportsCddDwmInterop"=dword:00000001
+"DxgkCddSyncDxAccess"=dword:00000001
+"DxgkCddSyncGPUAccess"=dword:00000001
+"DxgkCddWaitForVerticalBlankEvent"=dword:00000001
+"DxgkCreateSwapChain"=dword:00000001
+"DxgkFreeGpuVirtualAddress"=dword:00000001
+"DxgkOpenSwapChain"=dword:00000001
+"DxgkShareSwapChainObject"=dword:00000001
+"DxgkWaitForVerticalBlankEvent"=dword:00000001
+"DxgkWaitForVerticalBlankEvent2"=dword:00000001
+"SwapChainBackBuffer"=dword:00000001
+"TdrResetFromTimeoutAsync"=dword:00000001

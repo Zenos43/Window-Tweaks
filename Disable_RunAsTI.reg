@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+; Context Menu entries to use RunAsTI - lean and mean snippet by AveYo, 2018-2023
+; [FEATURES]
+; - innovative HKCU load, no need for reg load / unload ping-pong; programs get the user profile
+; - sets ownership privileges, high priority, and explorer support; get System if TI unavailable
+; - accepts special characters in paths for which default run as administrator fails
+; - show on the new 11 contextmenu via whitelisted id; plenty other available, fuck needing an app!
+; 2022.04.07: PowerShell / Terminal here (if installed, use Terminal as TI, else use PowerShell as TI)
+; 2023.07.06: fix arguments with quotes
+
+[-HKEY_CLASSES_ROOT\RunAsTI]
+[-HKEY_CLASSES_ROOT\batfile\shell\setdesktopwallpaper]
+[-HKEY_CLASSES_ROOT\cmdfile\shell\setdesktopwallpaper]
+[-HKEY_CLASSES_ROOT\regfile\shell\setdesktopwallpaper]
