@@ -17,3 +17,5 @@ How to use this script: Put it in steam folder the same with steam.exe and put t
 <br></br>
 
 ![image](https://github.com/user-attachments/assets/e8cd5deb-41a8-4945-9612-b0767197aae4)
+<br></br>
+Me on Laptop BTW
