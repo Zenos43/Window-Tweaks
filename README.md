@@ -16,6 +16,7 @@ How to use this script: Put it in steam folder the same with steam.exe and put t
 <br>⠀⠀⠀⠀⠀![image](https://github.com/user-attachments/assets/dc887ca2-419a-452f-b17e-16595f42d103)⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀![image](https://github.com/user-attachments/assets/87b704f7-e24e-4ea9-8cbb-1b4460c9474e)</br>
 <br></br>
 
+# LatencyMon
 ![image](https://github.com/user-attachments/assets/e8cd5deb-41a8-4945-9612-b0767197aae4)
 <br></br>
 Me on Laptop BTW
