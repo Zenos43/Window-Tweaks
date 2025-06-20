@@ -1,7 +1,7 @@
 # Process Lasso Config
 ## If you have the same cores and threads then you can basically use them
 ## All optimized and tested without any issues
+## How to import config ?
+![image](https://github.com/user-attachments/assets/9353ca6a-336e-4239-b97a-66cdc479b5b8)
 <br></br>
-## How to import ?
-![image](https://github.com/user-attachments/assets/e8cd5deb-41a8-4945-9612-b0767197aae4)
-<br></br>
+
