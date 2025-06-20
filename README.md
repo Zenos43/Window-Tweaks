@@ -6,6 +6,7 @@
 - MysticFoxDE for its awesome W10ANDW11-NETWORK-TCP-DESUBOPTIMIZATION.ps1 (https://github.com/MysticFoxDE/WINDOWS-OPTIMIZATIONS)
 - TairikuOkami for its very useful scripts Windows Tweaks.bat (tailored to my needs) & Microsoft Defender Disable.bat (https://github.com/TairikuOokami/Windows)
 - HakanFly (https://github.com/HakanFly/Windows-Tweaks)
+- SUC(K) GOAT Server (https://discord.gg/dqDY2dSBWh)
 
 # Steam Tweaks
 <br></br>
