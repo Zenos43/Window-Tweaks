@@ -8,7 +8,4 @@
 - HakanFly (https://github.com/HakanFly/Windows-Tweaks)
 - SUC(K) GOAT Server (https://discord.gg/dqDY2dSBWh)
 
-# LatencyMon
-![image](https://github.com/user-attachments/assets/e8cd5deb-41a8-4945-9612-b0767197aae4)
-<br></br>
 Me on Laptop BTW
