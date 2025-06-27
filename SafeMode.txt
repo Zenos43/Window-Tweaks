@@ -1,0 +1,27 @@
+rem Enable SAFE MODE
+rem Cant "RunasAdmin" for local user accounts in Safe Mode
+
+METHOD 1:
+
+Hold Shift key while restarting PC
+
+"Choose an option" screen:
+
+Down arrow > Down arrow > Enter (Troubleshoot)
+
+"Troubleshoot" screen
+
+Down arrow > Enter (Advanced options)
+
+Down arrow > Enter (Startup Settings)
+
+Enter
+
+After reboot / "Startup Settings" screen
+
+F4 (Enable Safe Mode)
+
+
+METHOD 2:
+
+Power on and power off the computer 3 times at boot  

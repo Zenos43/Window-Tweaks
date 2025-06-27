@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsAI]
+"DisableAIDataAnalysis"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\WindowsCopilot]
+"TurnOffWindowsCopilot"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"AllowTemporaryEnterpriseFeatureControl"=dword:00000000
+
+;; 1. optional, idk for sure if they contribute here but a default mdm is microsoft itself
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Appx]
+"MdmHosts"=-
+
+;; 2. see 1
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM]
+"DisableRegistration"=dword:00000001
+"AutoEnrollMDM"=dword:00000000

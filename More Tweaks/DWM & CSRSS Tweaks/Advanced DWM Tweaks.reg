@@ -1,0 +1,56 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\dwm.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000004
+"IoPriority"=dword:00000003
+
+; FlipPresent
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM]
+"ForceDirectDrawSync"=dword:00000000
+"FrameLatency"=dword:00000002
+"MaxQueuedPresentBuffers"=dword:00000001
+
+; Adjustablesd - jdallmann
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM]
+"DDisplayTestMode"=dword:00000000
+"DebugFailFast"=dword:00000000
+"DisableDeviceBitmaps"=dword:00000001
+"DisableHologramCompositor"=dword:00000001
+"DisableLockingMemory"=dword:00000001
+"DisableProjectedShadowsRendering"=dword:00000001
+"DisableProjectedShadows"=dword:00000001
+"DisallowNonDrawListRendering"=dword:00000001
+"EnableCpuClipping"=dword:00000001
+"EnableRenderPathTestMode"=dword:00000000
+"FlattenVirtualSurfaceEffectInput"=dword:00000001
+"InkGPUAccelOverrideVendorWhitelist"=dword:00000001
+"InteractionOutputPredictionDisabled"=dword:00000001
+"MPCInputRouterWaitForDebugger"=dword:00000000
+"OneCoreNoDWMRawGameController"=dword:00000000
+"ResampleInLinearSpace"=dword:00000001
+"SDRBoostPercentOverride"=dword:00000001
+"SuperWetEnabled"=dword:00000001
+
+; ImmediateRender - Kizzimo
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM]
+"AnimationAttributionEnabled"=dword:00000000
+"AnimationsShiftKey"=dword:00000000
+"DisableAdvancedDirectFlip"=dword:00000001
+"DisableDrawListCaching"=dword:00000001
+"EnableCommonSuperSets"=dword:00000001
+"EnableDesktopOverlays"=dword:00000000
+"EnableEffectCaching"=dword:00000001
+"EnableFrontBufferRenderChecks"=dword:00000000
+"EnableMegaRects"=dword:00000001
+"EnablePrimitiveReordering"=dword:00000000
+"EnableResizeOptimization"=dword:00000001
+"HighColor"=dword:00000000
+"MaxD3DFeatureLevel"=dword:00000000
+"OverlayQualifyCount"=dword:00000000
+"OverlayDisqualifyCount"=dword:00000000
+"ParallelModePolicy"=dword:00000001
+"ResampleModeOverride"=dword:00000001
+"RenderThreadWatchdogTimeoutMilliseconds"=dword:00000000
+"ResizeTimeoutGdi"=dword:00000000
+"ResizeTimeoutModern"=dword:00000000
+"UseHWDrawListEntriesOnWARP"=dword:00000001

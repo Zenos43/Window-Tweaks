@@ -1,0 +1,332 @@
+Windows Insider Build Update Checklist
+ - Instructions for when you install a new Windows Insider build update
+
+Its not only about FPS, but also latency.
+
+----------------------------------------------------------
+
+AV software is bloat, DisableWindowsDefender.bat and SecuritySettings.bat are NOT viruses. (Disabler.AME!MTB, Ulthar, Sabsik, Wacatac, and Kepavll!rfn FALSE POSITIVES)
+
+Windows Firewall is bloat, use router firewall.
+
+Windows Security > Virus & threat protection > Virus & threat protection settings > Manage settings > Disable all options
+
+Windows Security > Virus & threat protection > Virus & threat protection settings > Exclusions > Add or remove exclusions > Add an exclusion > Folder > %USERPROFILE%\Downloads\windows11-scripts-main
+
+Google Chrome > Settings > Privacy and security > Security > Safe Browsing > No protection
+
+Right click > Run as administrator
+
+----------------------------------------------------------
+
+NOTE: Reinstall Windows from USB ISO to fully restore apps, registry, and original settings
+
+NOTE: Doing a "Refresh your PC: Local reinstall" will NOT install deleted Windows apps and NOT restore original registry fully, "Cloud download" option recommended if USB ISO unavailable
+
+**Each installation choice has its own batch script for easy setup**
+
+Installation Video Tutorial:
+https://youtu.be/YNqtGV2IZqc?si=1cAnEc_uCMp0Yho6
+
+# Minimal_Install.bat
+ - EnablePowerShell.bat
+ - VCRedist.bat
+ - InternetSettings.bat
+ - DisablePerProcessSystemDPI.bat
+ - MouseAccelFix.bat
+ - NICProperties.bat
+ - NetworkTweaks.bat
+ - DisableNetBIOS.ps1
+ - DNS.ps1
+ - PowerPlanUltra.bat
+ - DisableFullscreenOptimizations.bat
+ - AMDAdrenalinSettingsPERF.bat / AMDAdrenalinSettingsHQ.bat
+ - NVIDIAPerformanceProfile.nip / NVIDIAHighQualityProfileOGL.nip / NVIDIAHighQualityProfileD3D.nip
+ - ThreadQuantum.bat
+ - RemoveRemoteDesktopConnection.bat
+ - MTU.bat
+
+# Standard_Install.bat
+ - EnablePowerShell.bat
+ - VCRedist.bat
+ - CPUTweaks.bat
+ - GPUTweaks.bat / AMDGPUTweaks.bat / NVGPUTweaks.bat
+ - HardDrive_Tweaks.bat
+ - USBTweaks.bat
+ - AboveNormalPriority.bat
+ - InputTweaks.bat
+ - InternetSettings.bat
+ - SecuritySettings.bat
+ - DisablePerProcessSystemDPI.bat
+ - MouseAccelFix.bat
+ - NICProperties.bat
+ - NetworkTweaks.bat
+ - DisableNetBIOS.ps1
+ - DNS.ps1
+ - PowerPlanUltra.bat
+ - DisableFullscreenOptimizations.bat
+ - AMDAdrenalinSettingsPERF.bat / AMDAdrenalinSettingsHQ.bat
+ - NVIDIAPerformanceProfile.nip / NVIDIAHighQualityProfileOGL.nip / NVIDIAHighQualityProfileD3D.nip
+ - DisableScheduledTasks.ps1 / DisableScheduledTasks.bat
+ - DisableLanmanWorkstation.bat
+ - DisableLanmanServer.bat
+ - DisableIPHelper.bat
+ - DisableNetBIOSHelper.bat
+ - DisableUPnPDeviceHost.bat
+ - DisableSSDPDiscovery.bat
+ - RAMTweaks.bat
+ - DisableEdge.bat
+ - ThreadQuantum.bat
+ - UseLargePages.bat
+ - MTU.bat
+ - RemoveRemoteDesktopConnection.bat
+ - DisableHighPrecisionEventTimer.bat
+
+# Advanced_Install.bat
+ - EnablePowerShell.bat
+ - VCRedist.bat
+ - CPUTweaks.bat
+ - GPUTweaks.bat / AMDGPUTweaks.bat / NVGPUTweaks.bat
+ - KernelTweaks.bat
+ - TimerTweaks.bat
+ - HardDrive_Tweaks.bat
+ - USBTweaks.bat
+ - AboveNormalPriority.bat
+ - InputTweaks.bat
+ - InternetSettings.bat
+ - SecuritySettings.bat
+ - DisablePerProcessSystemDPI.bat
+ - MouseAccelFix.bat
+ - NICProperties.bat
+ - NetworkTweaks.bat
+ - DisableNetBIOS.ps1
+ - DNS.ps1
+ - PowerPlanUltra.bat
+ - DisableFullscreenOptimizations.bat
+ - AMDAdrenalinSettingsPERF.bat / AMDAdrenalinSettingsHQ.bat / EnableAMDGPU_DalDramClockChangeLatencyNs.bat
+ - NVIDIAPerformanceProfile.nip / NVIDIAHighQualityProfileOGL.nip / NVIDIAHighQualityProfileD3D.nip
+ - DisabledScheduledTasks.ps1 / DisableScheduledTasks.bat
+ - DisableIntegratedGPU.ps1
+ - DisableBluetooth.bat
+ - DisableTouchPad.bat
+ - DisableHDR.bat / EnableHDR.bat
+ - DisableSysMain.bat
+ - DisableEdge.bat
+ - DisableTPM+SecureBoot.bat
+ - DisableBitLocker.bat
+ - DisableCPUMitigations.bat
+ - DisableMIDI2.0.bat
+ - RemoveFirewallRules.bat
+ - DisableDHCP.bat / StaticIPConnection.bat / DisableWinHTTP.bat / DisableWLAN_AutoConfig.bat
+ - DisablePowerManagement.ps1
+ - RAMTweaks.bat
+ - ThreadQuantum.bat
+ - UseLargePages.bat
+ - EnableClearPageFileAtShutdown.bat
+ - DisablePageFile.bat
+ - RemoveRemoteDesktopConnection.bat
+ - RemoveWindowsApps.bat
+ - RemoveWindowsFeatures.bat
+ - EnableSerializeTimerExpiration.bat
+ - DisableThreadDpcEnable.bat
+ - MaxPendingInterrupts.reg
+ - ResourceSets.reg
+ - Base+OverTargetPriorities.reg
+ - BCDEDIT_Tweaks.bat
+ - SetTimerResolution.bat
+ - DWM_ExclusiveModeFramerateAveragingPeriodMs.bat
+ - DWM_Tweaks.bat
+ - Windows11Tweaks.bat
+ - DisableServicesInternet.bat
+ - DisableComponents.bat
+ - DisableStartMenu.bat
+ - DisableShellExperienceHost.bat
+ - MTU.bat
+ - DeviceManager.bat
+ - WallpaperSolidColor.bat
+ - Theme.bat
+ - AccentColor.bat
+ - DisableSSL+LegacyTLS.bat
+
+  - Decrypt+OSCompression.bat
+
+NOTE:
+If at any point during the process you get stuck at "Just a moment..." screen before login, press CTRL+ALT+DEL to force login screen to show
+
+NOTE:
+Make sure to disable any unused network adapters under Device Manager, or scripts may run very slow
+
+# Expert Install Instructions
+
+Update BIOS
+
+Update TPM
+
+Update NVMe / SSD Firmware
+- Samsung Magician: (https://semiconductor.samsung.com/consumer-storage/magician)
+- Western Digital: SanDisk Dashboard (https://support-en.sandisk.com/app/answers/detailweb/a_id/31759)
+
+Tweak BIOS
+
+RESTART
+
+Run Windows update
+
+RESTART
+
+ - DisableUAC.bat
+ - EnablePowershell.bat
+ - RemoveWindowsTerminal.bat
+
+Update NIC Drivers
+
+ - NetworkSettings.txt
+ - NetworkOptions.txt
+
+Install TCP Optimizer
+ - https://www.speedguide.net/downloads.php
+ - TCPOptimizer.txt
+
+Install Intel DSA (Driver Support Assistant)
+ - Download (https://www.intel.com/content/www/us/en/support/detect.html)
+ - Check for updates with Intel DSA
+
+RESTART (hold SHIFT while restarting)
+
+Troubleshoot > Advanced options > Startup Settings > Restart > 7) Disable driver signature enforcement
+
+Update Video Drivers
+ - NVIDIA: https://www.nvidia.com/download/find.aspx
+  + NVIDIA Vulkan beta drivers (not recommended): https://developer.nvidia.com/vulkan-driver
+ - NVCleanstall.txt
+ - NVIDIA Control Panel: https://github.com/Aetopia/Install-NVCPL
+
+ - AMD BETA: https://www.techpowerup.com/download/amd-radeon-graphics-drivers/
+ - AMD: https://www.amd.com/en/support/download/drivers.html
+  + AMD Vulkan Drivers: https://www.amd.com/en/resources/support-articles/release-notes/RN-RAD-WIN-VULKAN.html
+
+- Intel 7th-10th Gen Processor Video Drivers: https://www.intel.com/content/www/us/en/download/776137/intel-7th-10th-gen-processor-graphics-windows.html
+
+RESTART
+
+ - RemoveWindowsApps.bat
+ - RemoveWindowsApps2.bat
+ - RemoveAllWindowsApps.bat
+ - RemoveWindowsFeatures.bat
+
+RESTART
+
+Install DirectX End-User Runtime Web Installer (dxwebsetup.exe)
+- Download (https://www.microsoft.com/en-us/download/details.aspx?id=35)
+
+Install SetACL
+ - Download (https://helgeklein.com/download/)
+ - Extract into %USERPROFILE%\Downloads
+
+Download SetTimerResolution
+ - https://github.com/valleyofdoom/TimerResolution
+
+Download Winget
+ - InstallWinget.bat
+
+Download Powershell
+ - InstallPowershell.bat
+
+Download Notepad++
+ - InstallNotepad++.bat
+
+Download Microsoft Visual C++ Redistributables
+ - VCRedist.bat
+
+Download Chromium
+ - https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/
+
+Download Chrome Canary
+ - InstallChromeCanary.bat
+
+Update Winget programs
+ - WingetUpdateApps.bat
+
+- RemoveRemoteDesktopConnection.bat
+- InternetSettings.bat
+- SecuritySettings.bat
+
+Install Intel Chipset INF Utility
+ - Download (https://www.intel.com/content/www/us/en/download/19347/chipset-inf-utility.html)
+
+RESTART
+
+Install and open CCleaner (optional)
+ - Download (https://www.ccleaner.com/)
+ - Launch CCleaner
+ - Run Registry Cleaner
+ - Tools > Registry > Scan for Issues
+ - Run multiple times until same registry errors occur
+
+RESTART (SAFE MODE) (hold SHIFT while restarting)
+
+ - Expert_Install.bat
+  + SetACL.bat (required for taking ownership of Windows Defender services and other bloat)
+  + DisableWindowsDefender.bat (AV software is bloat)
+  + DisableWindowsFirewall.bat (use router firewall)
+  + DisableWindowsSecurityCenter.bat
+  + DisableEventTraceSessions.bat
+  + DisableSAM.bat (black screen and unresponsive desktop if LanmanServer is enabled)
+
+  + DisableLanmanServer.bat
+  + DisableStartMenu.bat
+  + DisableComponents.bat
+  + DisableWindowsSearch.bat (if skipped, file explorer and system will hang and freeze)
+  + DeleteFonts.bat
+  + Windows11Tweaks.bat (if skipped, admin privileges are borked)
+
+RESTART
+
+ - MouseAccelFix.bat (Display > Scale: 100% required)
+ - PowerPlanUltra.bat
+ - ThreadQuantum.bat
+ - DisableWinHTTP.bat (WIRED CONNECTION ONLY)
+ - NICProperties.bat
+
+ - NetworkTweaks.bat
+ - DNS.ps1
+ - RAMTweaks.bat
+ - GPUTweaks.bat
+ - NVGPUTweaks.bat / AMDGPUTweaks
+ - KernelTweaks.bat
+ - CPUTweaks.bat
+ - TimerTweaks.bat
+ - InputTweaks.bat (script settings need tweaked to match users computer hardware)
+ - HardDrive_Tweaks.bat
+ - USBTweaks.bat
+ - UseLargePages.bat (add programs to enable Large Pages for them)
+ - AboveNormalPriority.bat (add programs to enable Above Normal Priority for them)
+ - EnableDirectXUserGlobalSettings.bat
+ - DeviceManager.bat
+
+ - DisableOverlays.bat (IF CRASHING, FLICKERING, AND LOW FPS OCCUR, RUN EnableOverlays.bat)
+
+ - EnableAMDGPU_DalDramClockChangeLatencyNs.bat (only for Radeon cards, disable if screen flickering occurs)
+
+ - Disable*.bat (DisableAppX.bat causes File Explorer to crash when opening right click context menu) (DO NOT RUN DisableStateRepository.bat and DisableDNSClient.bat)
+ - Remove*.bat
+
+ - StaticIPConnection.bat
+
+RESTART
+
+- https://github.com/xHybred/NvidiaProfileInspectorRevamped
+- load NVIDIAPerformanceProfile.nip or NVIDIAHighQualityProfileOGL.nip / NVIDIAHighQualityProfileD3D.nip
+
+RESTART
+
+- Setup Microsoft Interrupt Affinity Tool
+
+RESTART
+
+- StartUpBATs.bat (run everytime after login)
+- RefreshRate.bat (script settings need tweaked to match users computer hardware)
+- HDR_Switch.vbs
+
+Steve Gibson ShieldsUp! firewall test
+ - grc.com

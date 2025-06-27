@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Function Discovery Provider Host service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\fdPHost]
+"Start"=dword:00000003
+
+; Function Discovery Resource Publication service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\FDResPub]
+"Start"=dword:00000003
+
+; TCP/IP NetBIOS Helper Service
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lmhosts]
+"Start"=dword:00000003
+
+; SSDP Discovery
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SSDPSRV]
+"Start"=dword:00000003

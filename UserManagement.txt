@@ -1,0 +1,15 @@
+REM user management and instructions to add standard users (non-microsoft account)
+
+REM use "_-" at the end of usernames for more security
+
+REM you must use ".\" before username to login
+REM .\shoober420_-
+
+REM display accounts: net user
+REM add user: net user /add <username> <password>
+REM change user password: net user <username> <password>
+
+REM admin rights command prompt under standard user account
+REM cant enable "RunasAdmin" for local users under SAFE MODE
+
+REM runas /user:<adminaccount> cmd
