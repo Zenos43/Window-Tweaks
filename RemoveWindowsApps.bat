@@ -8,15 +8,17 @@ rem # Add-AppxPackage installs apps
 
 rem # Do NOT uninstall "Microsoft.UI.Xaml.CBS", causes constant screen flickering and blinking
 
-rem # !!!WARNING!!!
+rem # !!! WARNING !!!
+
 rem # This script may delete Windows Apps you use, do a back up in case anything is lost you need
-rem # !!!WARNING!!!
+
+rem # !!! WARNING !!!
 
 rem # REBOOT RECOMMENDED
 
 PAUSE
 
-rem # EnableStore.bat and EnableMaintenanceServices.bat required for this script to function if DisableServices.bat was executed
+rem # EnableStore.bat, EnableMaintenanceServices.bat, and EnableTLS1.2.bat required for this script to function if DisableServices*.bat and DisableSSL+LegacyTLS.bat was executed
 
 PAUSE
 
@@ -160,7 +162,7 @@ powershell -command "Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub* | 
 
 powershell -command "Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | Remove-AppxPackage"
 
-powershell -command "Get-AppxPackage -AllUsers *Microsoft.WindowsTerminal* | Remove-AppxPackage"
+rem powershell -command "Get-AppxPackage -AllUsers *Microsoft.WindowsTerminal* | Remove-AppxPackage"
 
 powershell -command "Get-AppxPackage -AllUsers *devhome* | Remove-AppxPackage"
 
@@ -224,7 +226,7 @@ powershell -command "Get-AppxPackage -AllUsers *Microsoft.Whiteboard* | Remove-A
 
 powershell -command "Get-AppxPackage -AllUsers *Microsoft.Windows.Photos* | Remove-AppxPackage"
 
-powershell -command "Get-AppxPackage -AllUsers *Microsoft.WindowsStore* | Remove-AppxPackage"
+rem powershell -command "Get-AppxPackage -AllUsers *Microsoft.WindowsStore* | Remove-AppxPackage"
 
 powershell -command "Get-AppxPackage -AllUsers *Microsoft.RemoteDesktop* | Remove-AppxPackage"
 
@@ -352,7 +354,7 @@ powershell -command "Get-AppxPackage -AllUsers *Microsoft.WidgetsPlatformRuntime
 
 powershell -command "Get-AppxPackage -AllUsers *RivetNetworks.KillerControlCenter* | Remove-AppxPackage"
 
-powershell -command "Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp* | Remove-AppxPackage"
+rem powershell -command "Get-AppxPackage -AllUsers *Microsoft.StorePurchaseApp* | Remove-AppxPackage"
 
 powershell -command "Get-AppxPackage -AllUsers *Microsoft.StartExperiencesApp* | Remove-AppxPackage"
 

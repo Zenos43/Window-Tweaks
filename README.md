@@ -803,7 +803,19 @@ DisableNull.bat / EnableNull.bat (required for Discord and Android Debug Bridge:
 
 TCP_AutoTuning.bat
 
-EnableServices.reg (turn on default services) 
+EnableServices.reg (turn on default services)
+
+DeleteWindowsOLD.bat (removes Windows.old directory)
+
+DeleteWindowsBackups.bat
+
+DisableVSS.bat / EnableVSS.bat
+
+RemoveStore.bat / InstallStore.bat
+
+LaunchStore.bat
+
+NV_DSCTweak.bat (fixes black screen)
 
 # Credits
 - https://www.elevenforum.com/members/garlin.5387
@@ -813,6 +825,8 @@ EnableServices.reg (turn on default services)
 - foss-lover34
 - brusk9060
 - dersk111y
+- V3nilla
+- https://github.com/Batleman
 - https://github.com/AlchemyTweaks
 - https://github.com/TairikuOokami
 - https://github.com/ionuttbara

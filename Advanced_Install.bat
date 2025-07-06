@@ -81,6 +81,9 @@ cd "%~dp0"
 call DisableFullscreenOptimizations.bat
 cd "%~dp0"
 
+call DisableScheduledTasks.bat
+cd "%~dp0"
+
 call DisableSysMain.bat
 cd "%~dp0"
 
@@ -108,13 +111,10 @@ cd "%~dp0"
 call RemoveRemoteDesktopConnection.bat
 cd "%~dp0"
 
-rem # TO AVOID TERMINAL CLOSING, LAUNCH IN SEPERATE WINDOW
-start cmd /k RemoveWindowsApps.bat
-PAUSE
+call RemoveWindowsApps.bat
 cd "%~dp0"
 
-start cmd /k RemoveWindowsFeatures.bat
-PAUSE
+call RemoveWindowsFeatures.bat
 cd "%~dp0"
 
 call EnableSerializeTimerExpiration.bat
@@ -133,6 +133,9 @@ regedit.exe "%~dp0\Base+OverTargetPriorities.reg"
 cd "%~dp0"
 
 call BCDEDIT_Tweaks.bat
+cd "%~dp0"
+
+call SetTimerResolution.bat
 cd "%~dp0"
 
 call DWM_ExclusiveModeFramerateAveragingPeriodMs.bat
@@ -175,6 +178,8 @@ cd "%~dp0"
 call RefreshRate.bat
 cd "%~dp0"
 
+
+
 @echo off
 
 echo.
@@ -212,6 +217,8 @@ goto :end
 
 :end
 
+
+
 echo.
 echo 1. BLUETOOTH ENABLED
 echo 2. BLUETOOTH DISABLED
@@ -247,6 +254,8 @@ goto :end
 
 :end
 
+
+
 echo.
 echo 1. TPM + BitLocker ENABLED
 echo 2. TPM + BitLocker DISABLED
@@ -281,6 +290,8 @@ call Decrypt+OSCompression.bat
 goto :end
 
 :end
+
+
 
 echo.
 echo 1. Static IP Connection
@@ -318,6 +329,8 @@ goto :end
 
 :end
 
+
+
 echo.
 echo 1. NVIDIA GPU
 echo 2. AMD GPU
@@ -353,6 +366,8 @@ goto :end
 
 :end
 
+
+
 echo.
 echo 1. CPU Mitigations ENABLED
 echo 2. CPU Mitigations DISABLED
@@ -387,6 +402,8 @@ call EnableCPUMitigations.bat
 goto :end
 
 :end
+
+
 
 echo.
 echo 1. TouchPad ENABLED
@@ -425,6 +442,8 @@ goto :end
 
 cd "%~dp0"
 
+
+
 ECHO R | powershell.exe ./DisableNetBIOS.ps1
 cd "%~dp0"
 
@@ -440,6 +459,8 @@ cd "%~dp0"
 ECHO R | powershell.exe ./DisablePowerManagement.ps1
 
 cd "%~dp0"
+
+
 
 echo.
 echo 1. Windows Services ENABLED
@@ -476,6 +497,8 @@ goto :end
 
 cd "%~dp0"
 
+
+
 echo.
 echo 1. Keep Firewall Rules
 echo 2. Remove Firewall Rules
@@ -510,6 +533,8 @@ goto :end
 :end
 
 cd "%~dp0"
+
+
 
 echo.
 echo 1. Enable Windows 95 Theme
@@ -546,6 +571,8 @@ goto :end
 
 cd "%~dp0"
 
+
+
 echo.
 echo 1. Enable Solid Color Background
 echo 2. Keep Current Wallpaper
@@ -580,6 +607,8 @@ goto :end
 :end
 
 cd "%~dp0"
+
+
 
 echo.
 echo 1. Enable Windows 95 Vaporwave Accent Colors
@@ -616,6 +645,8 @@ goto :end
 
 cd "%~dp0"
 
+
+
 echo.
 echo 1. Force 96 Monitor DPI (Better mouse movement) (MAY CAUSE BLURRY TEXT IN CERTAIN APPS)
 echo 2. Keep Current Monitor DPI
@@ -648,6 +679,90 @@ call DisablePerProcessSystemDPI.bat
 goto :end
 
 :end
+
+
+
+echo.
+echo 1. Enable Microsoft Store
+echo 2. Disable Microsoft Store (BREAKS MINECRAFT)
+echo C. Cancel
+echo.
+choice /c 123C /m "Choose an option :"
+
+if 3 EQU %ERRORLEVEL% (
+   echo User chose to cancel.
+) else if 2 EQU %ERRORLEVEL% (
+   call :dstore
+) else if 1 EQU %ERRORLEVEL% (
+   call :estore
+) else if 0 EQU %ERRORLEVEL% (
+   echo User bailed out.
+)
+
+goto :eof
+
+:estore
+echo User chose Enable Microsoft Store
+
+call EnableStore.bat
+
+goto :end
+
+:dstore
+echo User chose Disable Microsoft Store (BREAKS MINECRAFT)
+
+call DisableStore.bat
+
+goto :end
+
+:end
+
+
+
+echo.
+echo 1. Install Microsoft Store
+echo 2. Remove Microsoft Store (BREAKS MINECRAFT)
+echo 3. SKIP
+echo C. Cancel
+echo.
+choice /c 1234C /m "Choose an option :"
+
+if 4 EQU %ERRORLEVEL% (
+   echo User chose to cancel.
+) else if 3 EQU %ERRORLEVEL% (
+   call :skippert
+) else if 2 EQU %ERRORLEVEL% (
+   call :ustore
+) else if 1 EQU %ERRORLEVEL% (
+   call :istore
+) else if 0 EQU %ERRORLEVEL% (
+   echo User bailed out.
+)
+
+goto :eof
+
+:istore
+echo User chose Install Microsoft Store
+
+call InstallStore.bat
+
+goto :end
+
+:ustore
+echo User chose Remove Microsoft Store
+
+call RemoveStore.bat
+
+goto :end
+
+:skippert
+echo User chose SKIP
+
+goto :end
+
+:end
+
+
 
 echo.
 echo 1. Vim
@@ -686,6 +801,41 @@ call InstallNotepad++.bat
 goto :end
 
 :skippy
+echo User chose SKIP
+
+goto :end
+
+:end
+
+
+
+echo.
+echo 1. Uninstall Windows Terminal
+echo 2. SKIP
+echo C. Cancel
+echo.
+choice /c 12C /m "Choose an option :"
+
+if 3 EQU %ERRORLEVEL% (
+   echo User chose to cancel.
+) else if 2 EQU %ERRORLEVEL% (
+   call :skipster
+) else if 1 EQU %ERRORLEVEL% (
+   call :delterm
+) else if 0 EQU %ERRORLEVEL% (
+   echo User bailed out.
+)
+
+goto :eof
+
+:delterm
+echo User chose Uninstall Windows Terminal
+
+call RemoveWindowsTerminal.bat
+
+goto :end
+
+:skipster
 echo User chose SKIP
 
 goto :end
