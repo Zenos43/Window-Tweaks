@@ -1,0 +1,426 @@
+Windows Registry Editor Version 5.00
+
+; Restore to default
+[-HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Edge]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\EdgeUpdate]
+[-HKEY_CURRENT_USER\Software\Policies\Microsoft\Edge]
+[-HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\EdgeUpdate]
+
+; Configuration settings
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Edge]
+
+; Disable welcome screen on first Edge launch
+"HideFirstRunExperience"=dword:00000001
+
+; Disable sidebar search feature
+"SearchInSidebarEnabled"=dword:00000002
+
+; Disable Read Aloud feature
+"ReadAloudEnabled"=dword:00000000
+
+; Disable sending diagnostic data
+"DiagnosticData"=dword:00000000
+
+; Disable sending URLs for crash analysis (UrlDiagnosticDataEnabled)
+"UrlDiagnosticDataEnabled"=dword:00000000
+
+; Unpin Browser Essentials button from toolbar
+"PinBrowserEssentialsToolbarButton"=dword:00000000
+
+; Disable Collections feature
+"EdgeCollectionsEnabled"=dword:00000000
+
+; Disable personalization reporting
+"PersonalizationReportingEnabled"=dword:00000000
+
+; Disable web capture feature
+"WebCaptureEnabled"=dword:00000000
+
+; Disable Guided Switch feature
+"GuidedSwitchEnabled"=dword:00000000
+
+; Hide Microsoft Rewards display
+"ShowMicrosoftRewards"=dword:00000000
+
+; Disable auto import and skip first run import experience
+"AutoImportAtFirstRun"=dword:00000004
+
+; Disable Workspaces feature
+"EdgeWorkspacesEnabled"=dword:00000000
+
+; Disable Edge Wallet checkout
+"EdgeWalletCheckoutEnabled"=dword:00000000
+
+; Disable Edge Wallet Etree feature
+"EdgeWalletEtreeEnabled"=dword:00000000
+
+; Disable AAD website SSO
+"AADWebSiteSSOUsingThisProfileEnabled"=dword:00000000
+
+; Disable accessibility image labels
+"AccessibilityImageLabelsEnabled"=dword:00000000
+
+; Disable Bing as a search provider in address bar
+;"AddressBarMicrosoftSearchInBingProviderEnabled"=dword:00000000
+
+; Disable games menu
+"AllowGamesMenu"=dword:00000000
+
+; Disable inline Compose
+"ComposeInlineEnabled"=dword:00000000
+
+; Disable auto sign-in for on-premises accounts
+"ConfigureOnPremisesAccountAutoSignIn"=dword:00000000
+
+; Disable online text-to-speech configuration
+"ConfigureOnlineTextToSpeech"=dword:00000000
+
+; Disable share configuration
+"ConfigureShare"=dword:00000000
+
+; Disable default browser campaign
+"DefaultBrowserSettingsCampaignEnabled"=dword:00000000
+
+; Disable telemetry for third-party SERPs
+"Edge3PSerpTelemetryEnabled"=dword:00000000
+
+; Disable Edge Drop feature
+"EdgeEDropEnabled"=dword:00000000
+
+; Disable donation via Wallet
+"WalletDonationEnabled"=dword:00000000
+
+; Disable import on each launch
+"ImportOnEachLaunch"=dword:00000000
+
+; Disable in-app support
+"InAppSupportEnabled"=dword:00000000
+
+; Disable local browser data sharing
+"LocalBrowserDataShareEnabled"=dword:00000000
+
+; Disable live captions
+"LiveCaptionsAllowed"=dword:00000000
+
+; Disable MSA website SSO
+"MSAWebSiteSSOUsingThisProfileAllowed"=dword:00000000
+
+; Disable Microsoft Edge Insider promotion
+"MicrosoftEdgeInsiderPromotionEnabled"=dword:00000000
+
+; Disable Microsoft Editor synonyms
+"MicrosoftEditorSynonymsEnabled"=dword:00000000
+
+; Disable Microsoft Editor spell check
+"MicrosoftEditorProofingEnabled"=dword:00000000
+
+; Disable Related Website Sets
+"RelatedWebsiteSetsEnabled"=dword:00000000
+
+; Disable payment method query
+"PaymentMethodQueryEnabled"=dword:00000000
+
+; Disable Pinning Wizard
+"PinningWizardAllowed"=dword:00000000
+
+; Disable promotional tabs
+"PromotionalTabsEnabled"=dword:00000000
+
+; Disable Quick Search mini menu
+;"QuickSearchShowMiniMenu"=dword:00000000
+
+; Disable Office file quick view
+"QuickViewOfficeFilesEnabled"=dword:00000000
+
+; Disable remote debugging
+"RemoteDebuggingAllowed"=dword:00000000
+
+; Disable using web service to resolve navigation errors
+"ResolveNavigationErrorsUseWebService"=dword:00000000
+
+; Disable roaming profile support
+"RoamingProfileSupportEnabled"=dword:00000000
+
+; Disable image search
+"SearchForImageEnabled"=dword:00000000
+
+; Disable search filters
+"SearchFiltersEnabled"=dword:00000000
+
+; When search suggestions are enabled, browser fails to open (disable this)
+;"SearchSuggestEnabled"=dword:00000001
+
+; Disable search bar
+"SearchbarAllowed"=dword:00000000
+
+; Disable search bar on startup
+"SearchbarIsEnabledOnStartup"=dword:00000000
+
+; Disable shared links
+"SharedLinksEnabled"=dword:00000000
+
+; Disable Acrobat subscription button
+"ShowAcrobatSubscriptionButton"=dword:00000000
+
+; Disable Office shortcut in favorites bar
+"ShowOfficeShortcutInFavoritesBar"=dword:00000000
+
+; Disable recommendations
+"ShowRecommendationsEnabled"=dword:00000000
+
+; Disable speech recognition
+"SpeechRecognitionEnabled"=dword:00000000
+
+; Disable tab services
+"TabServicesEnabled"=dword:00000000
+
+; Disable text prediction
+"TextPredictionEnabled"=dword:00000000
+
+; Disable upload from phone
+"UploadFromPhoneEnabled"=dword:00000000
+
+; Disable visual search
+"VisualSearchEnabled"=dword:00000000
+
+; Redirect new tab page search box
+"NewTabPageSearchBox"="redirect"
+
+; Disable password generator
+"PasswordGeneratorEnabled"=dword:00000000
+
+; Disable password manager
+"PasswordManagerEnabled"=dword:00000000
+
+; Disable password monitor
+"PasswordMonitorAllowed"=dword:00000000
+
+; Disable password protection warnings
+"PasswordProtectionWarningTrigger"=dword:00000000
+
+; Disable alternate error pages
+"AlternateErrorPagesEnabled"=dword:00000000
+
+; Disable confirmation when closing a window with multiple tabs
+"AskBeforeCloseEnabled"=dword:00000000
+
+; Disable autofill for addresses
+"AutofillAddressEnabled"=dword:00000000
+
+; Disable autofill for credit cards
+"AutofillCreditCardEnabled"=dword:00000000
+
+; Disable autofill for memberships
+"AutofillMembershipsEnabled"=dword:00000000
+
+; Disable AAD Web SSO
+"AADWebSSOAllowed"=dword:00000000
+
+; Disable AI-generated themes
+"AIGenThemesEnabled"=dword:00000000
+
+; Disable Access Code Cast
+"AccessCodeCastEnabled"=dword:00000000
+
+; Disable ads transparency
+"AdsTransparencyEnabled"=dword:00000000
+
+; Disable Edge Admin Center
+"EdgeAdminCenterEnabled"=dword:00000000
+
+; Block Bing ads
+"BingAdsSuppression"=dword:00000001
+
+; Enable Do Not Track configuration
+"ConfigureDoNotTrack"=dword:00000001
+
+; Disable Edge Asset Delivery Service
+"EdgeAssetDeliveryServiceEnabled"=dword:00000000
+
+; Disable Edge Shopping Assistant
+"EdgeShoppingAssistantEnabled"=dword:00000000
+
+; Disable experimentation and configuration service
+;"ExperimentationAndConfigurationServiceControl"=dword:00000000
+
+; Disable user feedback
+"UserFeedbackAllowed"=dword:00000000
+
+; Disable Web Widget
+"WebWidgetAllowed"=dword:00000000
+
+; Disable Typosquatting checker
+"TyposquattingCheckerEnabled"=dword:00000000
+
+; Disable sign-in interception
+"SigninInterceptionEnabled"=dword:00000000
+
+; Disable side search
+"SideSearchEnabled"=dword:00000000
+
+; Disable default PDF recommendations
+"ShowPDFDefaultRecommendationsEnabled"=dword:00000000
+
+; Disable Home button
+"ShowHomeButton"=dword:00000000
+
+; Disable shopping list
+"ShoppingListEnabled"=dword:00000000
+
+; Disable Safe Browsing surveys
+"SafeBrowsingSurveysEnabled"=dword:00000000
+
+; Disable Safe Browsing deep scanning
+"SafeBrowsingDeepScanningEnabled"=dword:00000000
+
+; Disable Safe Browsing real-time check proxy
+"SafeBrowsingProxiedRealTimeChecksAllowed"=dword:00000000
+
+; Disable ignoring compromised password warning
+"PasswordDismissCompromisedAlertEnabled"=dword:00000000
+
+; Disable MAM
+"MAMEnabled"=dword:00000000
+
+; Disable Edge management
+"EdgeManagementEnabled"=dword:00000000
+
+; Disable Desktop Sharing Hub
+"DesktopSharingHubEnabled"=dword:00000000
+
+; Disable Copilot page context
+"CopilotPageContextEnabled"=dword:00000000
+
+; Disable new tab page content
+"NewTabPageContentEnabled"=dword:00000000
+
+; Disable new tab page app launcher
+"NewTabPageAppLauncherEnabled"=dword:00000000
+
+; Disable Bing Chat on new tab page
+"NewTabPageBingChatEnabled"=dword:00000000
+
+; Disable quick links on new tab page
+"NewTabPageQuickLinksEnabled"=dword:00000000
+
+; Disable QR code generator
+"QRCodeGeneratorEnabled"=dword:00000000
+
+; Disable Spotlight experiences and recommendations
+"SpotlightExperiencesAndRecommendationsEnabled"=dword:00000000
+
+; Set tracking prevention to Balanced
+"TrackingPrevention"=dword:00000002
+
+; Configure Cloudflare Gateway DNS with ECS (AdGuard + ABPVN filters)
+"DnsOverHttpsMode"="automatic"
+"DnsOverHttpsTemplates"="https://iabucttpma.cloudflare-gateway.com/dns-query{?dns}"
+
+; Enable support for Manifest V2 extensions
+"ExtensionManifestV2Availability"=dword:00000002
+
+; Disable built-in DNS client
+"BuiltInDnsClientEnabled"=dword:00000000
+
+; Disable proactive authentication workflow
+"ProactiveAuthWorkflowEnabled"=dword:00000000
+
+; Disable Application Guard favorites sync
+"ApplicationGuardFavoritesSyncEnabled"=dword:00000000
+
+; Disable Application Guard traffic identification
+"ApplicationGuardTrafficIdentificationEnabled"=dword:00000000
+
+; Disable seamless sign-in from web to browser
+"SeamlessWebToBrowserSignInEnabled"=dword:00000000
+
+; Disable ML autofill
+"EdgeAutofillMlEnabled"=dword:00000000
+
+; Disable local GenAI foundational model settings
+"GenAILocalFoundationalModelSettings"=dword:00000001
+
+; Disable performance detector
+"PerformanceDetectorEnabled"=dword:00000000
+
+; Disable Copilot Entra page context
+"EdgeEntraCopilotPageContext"=dword:00000000
+
+; Disable spell check
+"SpellcheckEnabled"=dword:00000000
+
+; Disable work search results in address bar
+"AddressBarWorkSearchResultsEnabled"=dword:00000000
+
+; Disable Scareware Blocker protection
+"ScarewareBlockerProtectionEnabled"=dword:00000000
+
+; Disable trending suggestions in address bar
+"AddressBarTrendingSuggestEnabled"=dword:00000000
+
+; Disable "Continue running background apps when Chromium is closed"
+"BackgroundModeEnabled"=dword:00000000
+
+; Disable Startup Boost
+"StartupBoostEnabled"=dword:00000000
+
+; Enable Preload pages
+"NetworkPredictionOptions"=dword:00000000
+
+; Enable Use graphics acceleration when available
+"HardwareAccelerationModeEnabled"=dword:00000001
+
+; Prevent WebRTC IP leaks by disabling non-proxied UDP
+"WebRtcLocalhostIpHandling"="disable_non_proxied_udp"
+
+; Don't allow related websites to view activity in group
+"RelatedWebsiteSetsEnabled"=dword:00000000
+
+; Block third-party cookies
+"BlockThirdPartyCookies"=dword:00000001
+
+; Never share additional OS region info
+"DefaultShareAdditionalOSRegionSetting"=dword:00000002
+
+; Enhance security on the web (Standard mode)
+"EnhanceSecurityMode"=dword:00000000
+
+; Auto-upgrade to HTTPS
+"HttpsUpgradesEnabled"=dword:00000001
+
+; Force HTTPS mode (optional, currently disabled)
+;"HttpsOnlyMode"="force_enabled"
+
+; Change default search engine to Google
+"ManagedSearchEngines"="[{\"is_default\":true,\"keyword\":\"google.com\",\"name\":\"Google\",\"search_url\":\"https://www.google.com/search?q={searchTerms}\",\"suggest_url\":\"https://www.google.com/complete/search?output=chrome&q={searchTerms}\"}]"
+
+; Disable default browser check on startup
+"DefaultBrowserSettingEnabled"=dword:00000000
+
+; Performance: Automatically put tabs to sleep after 15 minutes of inactivity
+"SleepingTabsEnabled"=dword:00000001
+"SleepingTabsTimeout"=dword:00000384  ; 15 minutes
+"EfficiencyModeEnabled"=dword:00000000
+"HighEfficiencyModeEnabled"=dword:00000000
+"ExtensionsPerformanceDetectorEnabled"=dword:00000000
+
+; Show Downloads button on toolbar
+"ShowDownloadsToolbarButton"=dword:00000001
+
+; Copilot icon won't show on toolbar
+"Microsoft365CopilotChatIconEnabled"=dword:00000000
+
+; Block AI search in browsing history
+"EdgeHistoryAISearchEnabled"=dword:00000000
+
+; Block default New Tab page
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Edge\URLBlocklist]
+"1"="ntp.msn.com"
+
+; Install Minimal New Tab plugin
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Edge\ExtensionInstallForcelist]
+"1"="khdnagehanbomfdogegmpddmcalmdnbg"
+
+[HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Edge\ExtensionSettings]
+; Canvas Blocker - Fingerprint Protect plugin settings (optional)
+"ahiddppepedlomdleppkbljnmkchlmdc"="{\"update_url\":\"https://edge.microsoft.com/extensionwebstorebase/v1/crx\",\"installation_mode\":\"normal_installed\"}"
