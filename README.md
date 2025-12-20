@@ -1,13 +1,20 @@
-# Do not run these scripts ( Minimal_Install.bat, Standard_Install.bat, Advanced_Install.bat ) they are outdated and broken. Everything else is fine, but please read carefully before applying and you need to know what you are doing.
+<div align="center">
+<h1>Do not run these scripts ( Minimal_Install.bat, Standard_Install.bat, Advanced_Install.bat ) they are outdated and broken. Everything else is fine, but please read carefully before applying and you need to know what you are doing.</h1>
+</div>
 
 
-----------------------------------------------------------
 
-----------------------------------------------------------
 
-----------------------------------------------------------
+<div align="center">
+<h1>OUTDATE</h1>
+</div>
+<p align="center">
+<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/9571e5dc-22de-49b8-a498-d4b40bbe0bb7" />
 
-----------------------------------------------------------
+
+
+
+</p>
 
 # Windows Scripts
 
