@@ -1,0 +1,1 @@
+## Put this folder some where save and copy "cleanTempBoot.vbs" shortcut into "Startup" folder
