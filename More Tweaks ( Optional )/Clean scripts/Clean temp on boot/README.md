@@ -1,1 +1,1 @@
-## Put this folder some where save and copy "cleanTempBoot.vbs" shortcut into "Startup" folder
+# Copy this folder to a safe location, then copy the shortcut file "cleanTempBoot.vbs" to the "Startup" folder.
