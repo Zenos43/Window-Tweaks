@@ -1,3 +1,7 @@
+#Do not run these scripts ( Minimal_Install.bat, Standard_Install.bat, Advanced_Install.bat ) they are outdated and broken. Everything else is fine, but please read carefully before applying and you need to know what you are doing.
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
 # Windows Scripts
 
 Its not only about FPS, but also latency.
