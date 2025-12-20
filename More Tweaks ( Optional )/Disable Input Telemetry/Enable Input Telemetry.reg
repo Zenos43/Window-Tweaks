@@ -1,0 +1,74 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\TextInput]
+"AllowHardwareKeyboardTextSuggestions"=-
+"AllowTextInputSuggestionUpdate"=-
+"AllowKeyboardTextSuggestions"=-
+
+; Input Personalization
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization]
+"Installed"=-
+"Shutdown"=-
+"AcceptedPrivacyPolicy"=-
+"HarvestContacts"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\InputPersonalization]
+"Installed"=dword:00000001
+"Shutdown"=-
+"AcceptedPrivacyPolicy"=-
+"HarvestContacts"=-
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization]
+"Installed"=-
+"Shutdown"=-
+"AcceptedPrivacyPolicy"=-
+"HarvestContacts"=-
+
+[-HKEY_USERS\.DEFAULT\Software\Microsoft\InputPersonalization]
+
+
+; Trained Data Store
+
+[HKEY_CURRENT_USER\Software\Microsoft\InputPersonalization\TrainedDataStore]
+"InsightsEnabled"=-
+"LMDataLoggerEnabled"=-
+
+[-HKEY_USERS\.DEFAULT\Software\Microsoft\InputPersonalization\TrainedDataStore]
+
+
+; Keyboard Suggestions
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\TextInput\AllowHardwareKeyboardTextSuggestions]
+"value"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\TextInput\AllowKeyboardTextSuggestions]
+"value"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\TextInput\AllowTextInputSuggestionUpdate]
+"value"=dword:00000001
+
+
+;IME
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\TextInput\AllowIMELogging]
+"value"=dword:00000001
+
+
+
+;Inking and Typing Personalization
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\UserPolicy\InkingAndTypingPersonalization]
+"DefaultValue"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CPSS\DevicePolicy\InkingAndTypingPersonalization]
+"DefaultValue"=dword:00000001
+
+
+;IME Logging
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\TextInput\AllowIMELogging]
+"value"=dword:00000001
+
+[-HKEY_LOCAL_MACHINE\software\policies\microsoft\ime\shared]

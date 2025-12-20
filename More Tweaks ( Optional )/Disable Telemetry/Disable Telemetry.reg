@@ -1,0 +1,79 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\StorageHealth]
+"AllowDiskHealthModelUpdates"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\StorageSense]
+"AllowStorageSenseGlobal"=dword:00000000
+"AllowStorageSenseTemporaryFilesCleanup"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl\StorageTelemetry]
+"DeviceDumpEnabled"=dword:00000000
+"StorageTCCode_0"=dword:00000000
+"StorageTCCode_1"=dword:00000000
+"StorageTCCode_2"=dword:00000000
+"StorageTCCode_3"=dword:00000000
+"StorageTCCode_4"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorageDevicePolicies]
+"WriteProtect"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\StorageHealth]
+"AllowDiskHealthModelUpdates"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\StorageSense]
+"AllowStorageSenseGlobal"=dword:00000000
+"AllowStorageSenseTemporaryFilesCleanup"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\DiagTrack]
+"Start"=dword:00000004 ; Windows 10 10240 and later
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+"POWERSHELL_TELEMETRY_OPTOUT"="1"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowTelemetry"=dword:00000000 ; Windows 10 10240 and later
+"LimitDiagnosticLogCollection"=dword:00000001 ; Windows 10 18363 and later
+"LimitDumpCollection"=dword:00000001 ; Windows 10 18363 and later
+"LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000000 ; Windows 10 16299 and later
+"DoNotShowFeedbackNotifications"=dword:00000001 ; Windows 10 10240 and later
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF]
+"LogLevel"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection]
+"AllowCommercialDataPipeline"=dword:00000000
+"AllowDeviceNameInTelemetry"=dword:00000000
+"MicrosoftEdgeDataOptIn"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\DeviceHealthAttestationService]
+"DisableSendGenericDriverNotFoundToWER"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceInstall\Settings]
+"DisableSendGenericDriverNotFoundToWER"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\DriverDatabase\Policies\Settings]
+"DisableSendGenericDriverNotFoundToWER"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\Reliability]
+"CEIPEnable"=dword:00000000
+"SqmLoggerRunning"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\Windows]
+"DisableOptinExperience"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\IE]
+"SqmLoggerRunning"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\FileHistory]
+"Disabled"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting]
+"value"=dword:00000000
+
