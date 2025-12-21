@@ -8,5 +8,6 @@
 - Disable Page Combining
 - Imod MSR Optimizer
 - Mouse Tweaks
+- Network Tweaks
 
 ## The rest is up to you.
