@@ -395,7 +395,7 @@ Windows Registry Editor Version 5.00
 "ManagedSearchEngines"="[{\"is_default\":true,\"keyword\":\"google.com\",\"name\":\"Google\",\"search_url\":\"https://www.google.com/search?q={searchTerms}\",\"suggest_url\":\"https://www.google.com/complete/search?output=chrome&q={searchTerms}\"}]"
 
 ; Disable default browser check on startup
-"DefaultBrowserSettingEnabled"=dword:00000000
+;"DefaultBrowserSettingEnabled"=dword:00000000
 
 ; Performance: Automatically put tabs to sleep after 15 minutes of inactivity
 "SleepingTabsEnabled"=dword:00000001

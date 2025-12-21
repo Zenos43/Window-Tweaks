@@ -6,7 +6,7 @@ IF DEFINED PROCESSOR_ARCHITEW6432 (set _arch=x86_64)
 PUSHD "%_arch%"
 
 :: Launch goodbyedpi.exe using RunHiddenConsole
-RunHiddenConsole.exe goodbyedpi.exe --dns-addr 77.88.8.8 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253 --blacklist ..\blacklist.txt
+RunHiddenConsole.exe goodbyedpi.exe -9 --dns-addr 77.88.8.8 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253
 
 POPD
 POPD
