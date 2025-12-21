@@ -1,4 +1,4 @@
-Configuration Low Latency Realtek Wi-Fi
+## Configuration Low Latency Realtek Wi-Fi
 ```
 1. Maximum Number of RSS Queues (NumRssQueues)
 
