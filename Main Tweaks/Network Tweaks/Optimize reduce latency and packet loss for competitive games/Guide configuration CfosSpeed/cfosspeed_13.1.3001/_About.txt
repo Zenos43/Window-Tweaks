@@ -1,0 +1,26 @@
+﻿
+ ВНИМАНИЕ!!! Если через какой-то период использования некоторые функции программы становятся недоступными, 
+             просто переустановите репак поверх.
+
+	Особенности репака:
+
+ 1. Не требует регистрации (патч Team AoRE)
+ 2. Возможность автоматической установки
+ 3. Мультиязычный интерфейс (включая русский)
+
+
+    "Тихая" установка с ключами /SILENT или /VERYSILENT (или файлом "Silent Install.cmd")
+
+ ****************************************************************************************************************************
+
+ ATTENTION!!! Just reinstall the repack on top, if after some period of use some functions of the program become unavailable
+             
+
+	Features repack:
+
+ 1. Does not require registration (patch Team AoRE)
+ 2. Ability to automatically installation
+ 3. Multilingual interface
+
+
+   "Silent" installation with the /SILENT or /VERYSILENT switches (or the Silent Install.cmd file)

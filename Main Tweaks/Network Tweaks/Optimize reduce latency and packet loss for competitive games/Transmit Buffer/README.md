@@ -1,6 +1,6 @@
 Transmit Buffer Configuration (TransmitBuf)
 
-    Recommended Value: 512 KB - 1 MB
+&nbsp;   Recommended Value: 512 KB - 1 MB
 
     Why this range?
         Transmit buffers hold outgoing data before it is sent. For competitive gaming, you want the packets to be sent as quickly as possible.
@@ -12,9 +12,10 @@ Transmit Buffer Configuration (TransmitBuf)
         If you see packet loss during gaming or experience delays in the sending of packets, increase the buffer to 1 MB.
         If everything is running smoothly, 512 KB can be optimal because it will prioritize fast, small packets for low-latency applications.
 
+
 Receive Buffer Configuration (ReceiveBuffers)
 
-    Recommended Value: 2048 KB - 4096 KB
+&nbsp;   Recommended Value: 2048 KB - 4096 KB
 
     Why this range?
         Receive buffers store incoming packets temporarily before processing. The goal is to have enough capacity to avoid packet loss during peak network loads, but not too much buffering to introduce delay.
@@ -24,3 +25,4 @@ Receive Buffer Configuration (ReceiveBuffers)
     Fine-tuning:
         If you notice packet loss under heavy load or network congestion, you can try increasing the buffer to 4 MB.
         For most setups, 2 MB is enough. But in high-traffic environments, bumping it up to 4 MB might help prevent packet loss without causing latency issues.
+
