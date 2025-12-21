@@ -1,5 +1,5 @@
 Configuration Low Latency Realtek Wi-Fi
-
+```
 1. Maximum Number of RSS Queues (NumRssQueues)
 
     Set to 1
@@ -69,3 +69,4 @@ Configuration Low Latency Realtek Wi-Fi
 
     Set to 802.11ax (Wi-Fi 6E), if available
     Reason: If your router supports it, the 6 GHz band (Wi-Fi 6E) offers even less interference and higher bandwidth, making it a great choice for ultra-low latency.
+```
