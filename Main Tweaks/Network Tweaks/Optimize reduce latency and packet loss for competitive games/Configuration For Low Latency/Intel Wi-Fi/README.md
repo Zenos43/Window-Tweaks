@@ -1,6 +1,6 @@
-Configuration Low Latency Intel Wi-Fi
+## Configuration Low Latency Intel Wi-Fi
 
-
+```
 1. Sleep on WoWLAN Disconnect (DeviceSleep)
 
     Setting: Disable
@@ -95,3 +95,4 @@ Configuration Low Latency Intel Wi-Fi
 
     Setting: 802.11ac (or 802.11ax if supported)
     Reason: Make sure your device is using the most advanced wireless mode (802.11ac or 802.11ax) for the best performance, avoiding outdated standards that cause higher latency.
+```
