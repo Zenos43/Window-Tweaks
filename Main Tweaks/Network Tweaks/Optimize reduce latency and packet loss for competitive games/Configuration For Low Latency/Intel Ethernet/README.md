@@ -1,5 +1,5 @@
-Configuration Low Latency Intel Ethernet
-
+## Configuration Low Latency Intel Ethernet
+```
 1. Flow Control (FlowControl)
 
     Set to Disabled: Flow control is used to prevent network congestion by pausing traffic if the NIC or switch buffer becomes full. In competitive gaming, it can introduce unnecessary delays, so it is best to disable it unless you're experiencing packet loss.
@@ -67,13 +67,14 @@ Configuration Low Latency Intel Ethernet
 17. Wake On Magic Packet From S5 (WakeOnMagicP)
 
     Set to Disabled: Similar to other Wake-on-LAN features, this wakes your NIC from a deep sleep state (S5) when it receives a magic packet. Disable it to prevent any delays during gaming.
-
-Recv Segment Coalescing (IPv4) (RscIPv4)
-
-    Setting: Disable
-    Reason: RSC for IPv4 aggregates multiple incoming packets into a larger segment to reduce CPU usage. While this helps improve throughput for file transfers or general browsing, it can increase latency in real-time applications   like gaming. Disabling it ensures packets are processed immediately, reducing the delay between receiving and processing each packet.
-
-Recv Segment Coalescing (IPv6) (RscIPv6)
-
-    Setting: Disable
-    Reason: Similar to IPv4, RSC for IPv6 combines multiple packets into a larger segment, which can introduce latency due to aggregation. Disabling RSC for IPv6 ensures that packets are processed as soon as they arrive, which is crucial for maintaining low latency in competitive gaming.
+```
+## Recv Segment Coalescing (IPv4) (RscIPv4)
+```
+Setting: Disable
+Reason: RSC for IPv4 aggregates multiple incoming packets into a larger segment to reduce CPU usage. While this helps improve throughput for file transfers or general browsing, it can increase latency in real-time applications   like gaming. Disabling it ensures packets are processed immediately, reducing the delay between receiving and processing each packet.
+```
+## Recv Segment Coalescing (IPv6) (RscIPv6)
+```
+Setting: Disable
+Reason: Similar to IPv4, RSC for IPv6 combines multiple packets into a larger segment, which can introduce latency due to aggregation. Disabling RSC for IPv6 ensures that packets are processed as soon as they arrive, which is crucial for maintaining low latency in competitive gaming.
+```
