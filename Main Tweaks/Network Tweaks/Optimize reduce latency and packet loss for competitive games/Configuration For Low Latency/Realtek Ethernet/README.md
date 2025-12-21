@@ -1,6 +1,6 @@
 
-Configuration Low Latency Realtek Ethernet
-
+## Configuration Low Latency Realtek Ethernet
+```
 1. Ethernet Energy Saving (EEE) (EEE)
 
     Set to Disabled
@@ -156,8 +156,9 @@ Configuration Low Latency Realtek Ethernet
     Set to Disabled
     Reason: Disabling WOL (Wake on LAN) during shutdown ensures the system isn’t interrupted by network activity while idle.
 	
-	
-	Auto Disable Gigabit (AutoDisableG...)
-	
+```
+## Auto Disable Gigabit (AutoDisableG...)
+```
 	Set to Disabled
 	Reason: Disabling auto-negotiation can prevent the network interface from changing its speed or mode during gaming sessions, which can cause brief latency spikes when the connection is renegotiated.
+ ```
