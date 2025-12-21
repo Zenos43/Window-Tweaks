@@ -41,7 +41,6 @@ Windows Registry Editor Version 5.00
 "LimitEnhancedDiagnosticDataWindowsAnalytics"=dword:00000000 ; Windows 10 16299 and later
 "DoNotShowFeedbackNotifications"=dword:00000001 ; Windows 10 10240 and later
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\WUDF]
 "LogLevel"=dword:00000000
 
@@ -49,7 +48,6 @@ Windows Registry Editor Version 5.00
 "AllowCommercialDataPipeline"=dword:00000000
 "AllowDeviceNameInTelemetry"=dword:00000000
 "MicrosoftEdgeDataOptIn"=dword:00000000
-
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\DeviceHealthAttestationService]
 "DisableSendGenericDriverNotFoundToWER"=dword:00000001
@@ -70,10 +68,8 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SQMClient\IE]
 "SqmLoggerRunning"=dword:00000000
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\FileHistory]
 "Disabled"=dword:00000001
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting]
 "value"=dword:00000000
-

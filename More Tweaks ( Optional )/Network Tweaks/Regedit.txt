@@ -1,0 +1,32 @@
+Suggested Registry Changes for Low Latency
+
+    Disable Power Saving Features
+        EnableDynamicPowerGating: Set to 0
+        NicAutoPowerSaver: Set to 0
+        AutoPowerSaveModeEnabled: Set to 0
+
+    Adjust Interrupt Moderation
+        InterruptModeration: Set to 0 (this reduces latency at the cost of higher CPU usage)
+
+    TCP Offload Settings
+        TCPChecksumOffloadIPv4: Set to 0
+        TCPChecksumOffloadIPv6: Set to 0
+        UDPChecksumOffloadIPv4: Set to 0
+        UDPChecksumOffloadIPv6: Set to 0
+
+    Disable Large Send Offload (LSO)
+        LsoV1IPv4: Set to 0
+        LsoV2IPv4: Set to 0
+        LsoV2IPv6: Set to 0
+
+    Receive Buffer Settings
+        ReceiveBuffers: Set to a lower value (e.g., 64 or 128 depending on your card)
+        TransmitBuffers: Set to a lower value (e.g., 64 or 128)
+
+    Enable/Disable Coalescing
+        EnableCoalesce: Set to 0
+
+    Miscellaneous Settings
+        PacketCoalescing: Set to 0
+        PacketDirect: Set to 1 (if supported)
+        FlowControl: Set to 0
