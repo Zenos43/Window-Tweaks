@@ -1,12 +1,4 @@
-\# First, you need to run DisableUAC.bat, then save this file to another location, and then copy the file to your startup directory.
+\# Choose one
 
-\##  U need to edit the SilentStartup.vbs path
+\## It is recommended to use the zapret method to run service.bat, select install service and general (17). You can add the website you want to bypass by adding it to "list-general.txt"; all subdomains of the added website will be automatically bypassed.
 
---------------------
-
-\## This code is based on GoodbyeDpi and RunHiddenConsole; I've only modified it slightly.
-
-
-
-* https://github.com/wenshui2008/RunHiddenConsole
-* https://github.com/ValdikSS/GoodbyeDPI
