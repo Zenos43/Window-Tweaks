@@ -1,0 +1,24 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\GraphicsDrivers]
+"DisableVersionMismatchCheck"=dword:00000001
+"EnableIgnoreWin32ProcessStatus"=dword:00000001
+"HwSchMode"=dword:00000002
+"HwSchTreatExperimentalAsStable"=dword:00000001
+"TdrDebugMode"=dword:00000001
+"TdrLevel"=dword:00000000
+"DisableBadDriverCheckForHwProtection"=dword:00000001
+"DisableBoostedVSyncVirtualization"=dword:00000001
+"DisableIndependentVidPnVSync"=dword:00000001
+"DisableMultiSourceMPOCheck"=dword:00000001
+"EnableFbrValidation"=dword:00000000
+"KnownProcessBoostMode"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\GraphicsDrivers\Scheduler]
+"AdjustWorkerThreadPriority"=dword:00000000
+"AudioDgAutoBoostPriority"=dword:00000000
+"AutoSyncToCPUPriority"=dword:00000000
+"DebugLargeSmoothenedDuration"=dword:00000000
+"ForegroundPriorityBoost"=dword:00000000
+"FrameServerAutoBoostPriority"=dword:00000000
+"QueuedPresentLimit"=dword:00000001
