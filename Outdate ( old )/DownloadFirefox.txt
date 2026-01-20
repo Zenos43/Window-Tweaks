@@ -1,3 +1,0 @@
-Download Firefox Nightly
-   - Find latest version and URL here using phone: https://ftp.mozilla.org/pub/firefox/nightly
-   - curl "URL" -O firefox-xxx.xxx.en-US.win64.zip
