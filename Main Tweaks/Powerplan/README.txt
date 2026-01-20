@@ -1,1 +1,0 @@
-Benchmarked - best powerplan i have tested so far ( June 13, 2025 )
