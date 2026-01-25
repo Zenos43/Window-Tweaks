@@ -1,0 +1,46 @@
+TEST THEM IF YOU WANT
+
+
+
+If your connection speed is less than 1 Megabit per second, you can set it to "highlyrestricted".
+
+
+
+If you are on dial-up connection, you can try setting this to "disabled" (as your speed will not need buffers larger than 64KB).
+
+
+
+If your connection speed is near/over 1 Gigabit (1000 Mbps), you can try setting this to "experimental", this should be tested further, however, as it may cause some stability issues. If you experience any issues with the "experimental" setting please dial it back to "normal"
+
+
+
+How these settings work:
+
+1. autotuninglevel=disabled (Recommended for Low-Latency Gaming)
+
+   Reason: Disabling TCP Auto-Tuning ensures that Windows doesn't make dynamic adjustments to the TCP receive window size during the gaming session, which can introduce latency spikes.
+   Benefit for Gaming: When you're gaming, especially in competitive environments, predictable low latency is key. With Auto-Tuning disabled, your system won't resize the TCP window dynamically, which can be helpful in maintaining a consistent ping and lower latency.
+   Why it’s ideal: Many gamers prefer this setting because no dynamic resizing means less chance for delays when trying to establish a steady connection.
+   Example Use Case: If you have a stable internet connection (whether it's fiber or a good Wi-Fi connection), disabling Auto-Tuning can offer consistent and quick responses for low-latency gaming.
+
+2. autotuninglevel=restricted (Balanced Choice)
+
+   Reason: The restricted setting limits how large the TCP window can grow but still allows some dynamic resizing. This can prevent excessive buffering or unnecessary delay caused by an overly large receive window.
+   Benefit for Gaming: It gives a good balance between throughput and responsiveness. If your connection is somewhat unstable, this might help ensure latency is kept in check without sacrificing too much speed.
+   Why it’s still good: If you're on a network that fluctuates a bit, the restricted setting can help ensure that Auto-Tuning doesn’t work too aggressively and causes spikes in latency.
+
+3. autotuninglevel=normal (Less Ideal for Competitive Gaming)
+
+   Reason: The normal setting allows for dynamic TCP window adjustments based on network conditions. While this is fine for general usage (like web browsing or streaming), in competitive gaming, you want low latency, and these adjustments can introduce unpredictable delays.
+   Why it may be a problem: If the system keeps adjusting the window size based on fluctuating conditions, it could cause higher latency during those adjustments. This is usually not desirable when you're playing fast-paced, real-time games where responsiveness is critical.
+
+4. autotuninglevel=highlyrestricted (Can Hurt Throughput)
+
+   Reason: The highlyrestricted setting further limits the size of the TCP receive window, which can seriously limit throughput. This is great for slower or unstable connections but usually not ideal for gaming where a good balance of speed and latency is needed.
+   Why it might hurt gaming: It can reduce performance by limiting how much data can be transferred, especially on high-speed connections, potentially increasing ping times. This is not ideal for games requiring fast and responsive connections.
+
+5. autotuninglevel=experimental (Not Recommended)
+
+   Reason: The experimental setting is meant for testing and experimentation with new configurations. It’s not a stable, production-ready setting and is unlikely to offer consistent or reliable performance.
+   Why it’s not ideal: For gaming, you want consistency and stability. Using experimental settings can introduce unexpected behavior, which is not ideal when you need low latency.
+

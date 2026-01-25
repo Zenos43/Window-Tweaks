@@ -1,0 +1,54 @@
+Windows Registry Editor Version 5.00
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\dwm.exe]
+
+; FlipPresent
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM]
+"ForceDirectDrawSync"=-
+"FrameLatency"=-
+"MaxQueuedPresentBuffers"=-
+
+; Adjustablesd - jdallmann
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM]
+"DDisplayTestMode"=-
+"DebugFailFast"=-
+"DisableDeviceBitmaps"=-
+"DisableHologramCompositor"=-
+"DisableLockingMemory"=-
+"DisableProjectedShadowsRendering"=-
+"DisableProjectedShadows"=-
+"DisallowNonDrawListRendering"=-
+"EnableCpuClipping"=-
+"EnableRenderPathTestMode"=-
+"FlattenVirtualSurfaceEffectInput"=-
+"InkGPUAccelOverrideVendorWhitelist"=-
+"InteractionOutputPredictionDisabled"=-
+"MPCInputRouterWaitForDebugger"=-
+"OneCoreNoDWMRawGameController"=-
+"ResampleInLinearSpace"=-
+"SDRBoostPercentOverride"=-
+"SuperWetEnabled"=-
+
+; ImmediateRender - Kizzimo
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\DWM]
+"AnimationAttributionEnabled"=-
+"AnimationsShiftKey"=-
+"DisableAdvancedDirectFlip"=-
+"DisableDrawListCaching"=-
+"EnableCommonSuperSets"=-
+"EnableDesktopOverlays"=-
+"EnableEffectCaching"=-
+"EnableFrontBufferRenderChecks"=-
+"EnableMegaRects"=-
+"EnablePrimitiveReordering"=-
+"EnableResizeOptimization"=-
+"HighColor"=-
+"MaxD3DFeatureLevel"=-
+"OverlayQualifyCount"=-
+"OverlayDisqualifyCount"=-
+"ParallelModePolicy"=-
+"ResampleModeOverride"=-
+"RenderThreadWatchdogTimeoutMilliseconds"=-
+"ResizeTimeoutGdi"=-
+"ResizeTimeoutModern"=-
+"UseHWDrawListEntriesOnWARP"=-

@@ -1,0 +1,42 @@
+NumWorkers=4
+WorkPreference=0
+CoresPerTest=4
+ComputerGUID=2bc874451f7a706a8d72e16b33e0f51a
+StressTester=1
+UsePrimenet=0
+TortureHyperthreading=0
+MinTortureFFT=73
+MaxTortureFFT=384
+TortureMem=8
+TortureTime=3
+TortureWeak=1048576
+
+[Internals]
+OldCpuSpeed=4475
+NewCpuSpeedCount=0
+NewCpuSpeed=0
+V30OptionsConverted=1
+WGUID_version=2
+
+[Windows]
+Left=156
+Top=156
+Right=1596
+Bottom=909
+W1=0 0 1422 39 0 -1 -1 -1 -1
+W2=0 39 1422 79 0 -1 -1 -1 -1
+W3=0 79 1422 118 0 -1 -1 -1 -1
+W4=0 118 1422 158 0 -1 -1 -1 -1
+W5=0 158 1422 197 0 -1 -1 -1 -1
+W6=0 197 1422 237 0 -1 -1 -1 -1
+W7=0 237 1422 277 0 -1 -1 -1 -1
+W8=0 277 1422 316 0 -1 -1 -1 -1
+W9=0 316 1422 356 0 -1 -1 -1 -1
+W10=0 356 1422 395 0 -1 -1 -1 -1
+W11=0 395 1422 435 0 -1 -1 -1 -1
+W12=0 435 1422 475 0 -1 -1 -1 -1
+W13=0 475 1422 514 0 -1 -1 -1 -1
+W14=0 514 1422 554 0 -1 -1 -1 -1
+W15=0 554 1422 593 0 -1 -1 -1 -1
+W16=0 593 1422 633 0 -1 -1 -1 -1
+W17=0 633 1422 673 0 -1 -1 -1 -1

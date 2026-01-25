@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"AdjustDpcThreshold"=dword:00000320
+"DeepIoCoalescingEnabled"=dword:00000001
+"IdealDpcRate"=dword:00000320
+"ForegroundBoost"=dword:00000001
+"SchedulerAssistThreadFlagOverride"=dword:00000001
+"ThreadBoostType"=dword:00000002
+"ThreadSchedulingModel"=dword:00000001

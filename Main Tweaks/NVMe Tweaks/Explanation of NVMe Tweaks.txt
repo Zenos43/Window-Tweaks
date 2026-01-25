@@ -1,0 +1,79 @@
+StorNVMeAllowZeroLatency:
+
+Definition: Allows NVMe SSDs to execute commands with zero latency.
+Impact: Improves response time for small, latency-sensitive operations.
+
+QueueDepth:
+
+Definition: Sets the maximum number of outstanding requests that can be sent to the NVMe SSD.
+Impact: Increases performance for multiple simultaneous operations.
+
+NvmeMaxReadSplit:
+
+Definition: Specifies the maximum number of splits for an NVMe read command.
+Impact: Optimizes performance for large, consecutive reads.
+
+NvmeMaxWriteSplit:
+
+Definition: Specifies the maximum number of splits for an NVMe write command.
+Impact: Optimizes performance for large, consecutive writes.
+
+ForceFlush:
+
+Definition: Immediately executes write commands, bypassing temporary storage.
+Impact: Improves data integrity by reducing temporary storage.
+
+ImmediateData:
+
+Definition: Sends command data along with the command itself.
+Impact: Enhances performance for small, latency-sensitive operations.
+
+MaxSegmentsPerCommand:
+
+Definition: Sets the maximum number of data segments in an NVMe command.
+Impact: Improves performance for operations with many small data segments.
+
+MaxOutstandingCmds:
+
+Definition: Sets the maximum number of outstanding NVMe commands.
+Impact: Improves performance for multiple simultaneous operations.
+
+ForceEagerWrites:
+
+Definition: Immediately executes write commands, bypassing temporary storage.
+Impact: Improves performance for high-priority writes.
+
+MaxQueuedCommands:
+
+Definition: Sets the maximum number of NVMe commands that can be queued.
+Impact: Improves performance for multiple simultaneous operations.
+
+MaxOutstandingIORequests:
+
+Definition: Sets the maximum number of outstanding I/O requests.
+Impact: Improves performance for multiple simultaneous I/O operations.
+
+NumberOfRequests:
+
+Definition: Sets the number of requests submitted to the NVMe SSD.
+Impact: Used for statistics and monitoring purposes.
+
+IoSubmissionQueueCount:
+
+Definition: Sets the number of I/O submission queues.
+Impact: Improves performance for multiple simultaneous I/O operations.
+
+IoQueueDepth:
+
+Definition: Sets the maximum number of outstanding I/O requests in each queue.
+Impact: Improves performance for multiple simultaneous I/O operations.
+
+HostMemoryBufferBytes:
+
+Definition: Sets the size of the host memory buffer for NVMe.
+Impact: Improves performance for operations with large amounts of data by reducing DMA transfers.
+
+ArbitrationBurst:
+
+Definition: Sets the number of requests that can be simultaneously submitted by each NVMe SSD.
+Impact: Improves performance for multiple simultaneous NVMe operations.

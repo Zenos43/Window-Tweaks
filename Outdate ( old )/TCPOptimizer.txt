@@ -1,0 +1,54 @@
+Download TCP Optimizer
+ - https://www.speedguide.net/downloads.php
+
+Requires WMI - Windows Management Instrumentation
+
+NOTE:
+Disable all offloading settings except Checksum Offloading for gaming
+
+Test internet speed (https://www.speedtest.net/)
+
+General Settings
+=====================
+ 
+ - Connection Speed
+  + adjust connection speed slider according to speedtest results
+ - Network Adapter selection: NIC NAME
+ - Choose settings: Custom
+ - MTU (1472)
+  + open Command Prompt
+  + ping www.google.com -f -l 1500 (keep lowering value until packets aren't fragmented)
+ - TCP Window Auto-Tuning: normal
+  + normal does NOT cause bufferbloat, DONT set to disabled to increase score
+  + waveform.com/tools/bufferbloat
+ - Windows Scaling heuristics: disabled
+ - Congestion Control Provider: BBR2
+  + must be set via netsh
+ - Receive-Side Scaling (RSS): enabled
+ - R.Segment Coalescing (RSC): disabled
+ - Time to Live (TTL): 64
+ - ECN Capability: disabled
+ - Checksum Offloading: enabled
+ - TCP Chimney Offload: disabled
+ - Large Send Offload (LSO): disabled
+ - TCP 1323 Timestamps: disabled
+
+Advanced Settings
+=======================
+
+ - LocalPriority: 4
+ - HostPriority: 5
+ - DnsPriority: 6
+ - NetbtPriority: 7
+ - Max SYN Retransmissions: 2
+ - NonSackRttResiliency: disabled
+ - Initial RTO: 1000
+ - Min RTO: 300
+ - NetworkThrottlingIndex: disabled: ffffffff
+ - SystemResponsiveness: gaming: 0
+ - TcpAckFrequency: disabled: 1
+ - TCPNoDelay: enabled: 1
+ - TcpDelAckTicks: disable: 0
+ - LargeSystemCache: disabled: 0
+ - MaxUserPort: 65534
+ - TcpTimedWaitDelay: 30

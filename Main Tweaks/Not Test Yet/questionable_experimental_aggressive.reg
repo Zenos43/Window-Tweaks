@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"MaxThreadsTotal"=dword:00000256 ; 512 (max)
+"MaxThreadsPerProcess"=dword:00000032 ; 64 (max)
+"SchedulerPeriod"=dword:00000001 ; 1 ms (aggressiver Scheduling)
+"SchedulerTimerResolution"=dword:00002710 ; 10.000 Einheiten = 1 ms
+"LazyModeTimeout"=dword:000003E8 ; 1000 ms (verhindert verzögertes Reagieren)
+"IdleDetectionCycles"=dword:00000000 ; Keine Wartezeit für Idle-Erkennung
+"NoLazyMode"="TRUE" ; Deaktiviert "Lazy Mode" komplett
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Audio]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\DisplayPostProcessing]
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+
+"Priority When Yielded"=dword:00000018 ; 24 (höhere Priorität)
+"Latency Sensitive"="TRUE" ; Kritisch für Echtzeit
+"BackgroundPriority"=dword:00000000 ; Keine Hintergrund-Priorität
+"Background Only"="FALSE" ; Immer im Vordergrund
+"Clock Rate"=dword:00001388 ; 5000 MHz (5 GHz)
+"Priority"=dword:00000001 ; Höchste Priorität
+"Scheduling Category"="High" ; Reserviert CPU-Ressourcen

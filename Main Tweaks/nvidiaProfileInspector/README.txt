@@ -1,0 +1,2 @@
+My own nip not benchmark yet but feel good on my pc
+If u have any problem with any game like siege X ... about warning advantaged driver modifi.. then remove Antialiasing - Transparency Supersampling from "0x00000008 AA_MODE_REPLAY_MODE_ALL" to "Off / Multisampling" then Apply changes

@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; Client License Service // allow msstore app install with winget (need reboot)
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ClipSVC]
+"Start"=dword:00000003

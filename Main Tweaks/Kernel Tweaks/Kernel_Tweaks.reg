@@ -1,0 +1,26 @@
+Windows Registry Editor Version 5.00
+
+; Base tweaks
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+"DisableOverlappedExecution"=dword:00000000
+"PriorityControl"=dword:00000032
+"QuantumLength"=dword:00000014
+"TimeIncrement"=dword:0000000f
+
+; Advanced tweaks
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+"BufferSize"=dword:00000020
+"DisableLowQosTimerResolution"=dword:00000001
+"IoEnqueueIrp"=dword:00000020
+"IoQueueWorkItem"=dword:00000020
+"IoQueueWorkItemToNode"=dword:00000020
+"IoQueueWorkItemEx"=dword:00000020
+"IoQueueThreadIrp"=dword:00000020
+"ExTryQueueWorkItem"=dword:00000020
+"ExQueueWorkItem"=dword:00000020
+"MaxDynamicTickDuration"=dword:0000000a
+"MaximumSharedReadyQueueSize"=dword:00000080
+"StackSubSystemStackSize"=dword:00010000
+"UseNewEaBuffering"=dword:00000001
+"UseNormalStack"=dword:00000001
+"XMMIZeroingEnable"=dword:00000000

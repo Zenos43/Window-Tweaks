@@ -1,0 +1,96 @@
+Windows Registry Editor Version 5.00
+
+; Adjust active hours / 0 - Manually / 1 - Automatically
+[HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsUpdate\UX\Settings]
+"SmartActiveHoursState"=dword:00000000
+
+; Active hours (18 hours) 6am to 0am - Windows Updates will not automatically restart your device during active hours
+[HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsUpdate\UX\Settings]
+"ActiveHoursEnd"=dword:00000000
+"ActiveHoursStart"=dword:00000006
+"UserChoiceActiveHoursEnd"=dword:00000000
+"UserChoiceActiveHoursStart"=dword:00000006
+"AutoRebootLimitInDays"=dword:0000016D
+"SnoozeRebootHours"=dword:0000FFFF
+
+; 1 - Disable File History (Creating previous versions of files/Windows Backup)
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\FileHistory]
+"ActiveHoursEnd"=dword:00000001
+
+; 1 - Disable Malicious Software Removal Tool offered via Windows Updates (MRT) + Disable Heartbeat Telemetry
+[HKEY_LOCAL_MACHINE\Software\Microsoft\RemovalTools\MpGears]
+"HeartbeatTrackingIndex"=dword:00000000
+"SpyNetReportingLocation"=""
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\MRT]
+"DontOfferThroughWUAU"=dword:00000001
+"DontReportInfectionInformation"=dword:00000001
+
+; Choose how updates are delivered
+; 0 - Turns off Delivery Optimization
+; 1 - Gets or sends updates and apps to PCs on the same NAT only
+; 2 - Gets or sends updates and apps to PCs on the same local network domain
+; 3 - Gets or sends updates and apps to PCs on the Internet
+; 99 - Simple download mode with no peering 
+; 100 - Use BITS instead of Windows Update Delivery Optimization
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config]
+"DODownloadMode"=dword:00000000
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DeliveryOptimization]
+"DODownloadMode"=dword:00000000
+
+; Update apps automatically / 2 - Off / 4 - On
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\WindowsStore\WindowsUpdate]
+"AutoDownload"=dword:00000002
+
+; Disable drivers update
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Update]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate]
+"value"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata"]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+
+["HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+"DontSearchWindowsUpdate"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DriverSearching]
+"DontPromptForWindowsUpdate"=dword:00000001
+
+[HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\DriverSearching]
+"DontPromptForWindowsUpdate"=dword:00000001
+
+; Pause Windows Update
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"DeferFeatureUpdates"=dword:00000001
+"DeferFeatureUpdatesPeriodInDays"=dword:0000016D
+"DeferQualityUpdates"=dword:00000001
+"DeferQualityUpdatesPeriodInDays"=dword:0000016D
+"DisableDualScan"=dword:00000001
+"DisableWindowsUpdateAccess"=dword:00000001
+"AUPowerManagement"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"NoAutoUpdate"=dword:00000001
+"AUOptions"=dword:00000001
+"IncludeRecommendedUpdates"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+"FlightSettingsMaxPauseDays"=dword:00000172
+"PauseFeatureUpdatesEndTime"="2025-09-15T00:00:00Z"
+"PauseFeatureUpdatesStartTime"="2024-10-02T09:21:45Z"
+"PauseQualityUpdatesEndTime"="2025-09-15T00:00:00Z"
+"PauseQualityUpdatesStartTime"="2024-10-02T09:21:45Z"
+"PauseUpdatesExpiryTime"="2025-09-15T00:00:00Z"
+"PauseUpdatesStartTime"="2024-10-02T09:21:45Z"

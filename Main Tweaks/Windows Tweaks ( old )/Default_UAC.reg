@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000005
+"ConsentPromptBehaviorUser"=dword:00000003
+"EnableInstallerDetection"=dword:00000001
+"EnableLUA"=dword:00000001
+"EnableSecureUIAPaths"=dword:00000001
+"EnableUIADesktopToggle"=dword:00000000
+"EnableVirtualization"=dword:00000001
+"FilterAdministratorToken"=dword:00000001
+"PromptOnSecureDesktop"=dword:00000001
+"ValidateAdminCodeSignatures"=dword:00000000
+"VerboseStatus"=-
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\Audit]
+"ProcessCreationIncludeCmdLine_Enabled"=-
